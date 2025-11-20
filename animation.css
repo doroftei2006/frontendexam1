@@ -1,0 +1,93 @@
+@keyframes fadeDown {
+    from { 
+        opacity: 0; 
+        transform: translateY(-10px); 
+    }
+    to   { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+.s1 { animation-delay: 0s; }
+.s2 { animation-delay: 4s; }
+.s3 { animation-delay: 8s; }
+.s4 { animation-delay: 12s; }
+
+@keyframes fade {
+    0% { 
+        opacity: 0; 
+        pointer-events: none; 
+    }
+    5% { 
+        opacity: 1; 
+        pointer-events: auto; 
+    }
+    25% { 
+        opacity: 1; 
+        pointer-events: auto; 
+    }
+    30% { 
+        opacity: 0; 
+        pointer-events: none; 
+    }
+    100% { 
+        opacity: 0; 
+        pointer-events: none; 
+    }
+}
+.dots span:nth-child(1) { animation: dot 16s infinite 0s; }
+.dots span:nth-child(2) { animation: dot 16s infinite 4s; }
+.dots span:nth-child(3) { animation: dot 16s infinite 8s; }
+.dots span:nth-child(4) { animation: dot 16s infinite 12s; }
+
+@keyframes dot {
+    0%, 25% { 
+        background: #00e0d0; 
+        border-color: #00e0d0; 
+    }
+    26%, 100% { 
+        background: transparent; 
+        border-color: #aaa; 
+    }
+}
+.team .slide:nth-child(1) { animation: fadeTeam 30s infinite; animation-delay: 0s; }
+.team .slide:nth-child(2) { animation: fadeTeam 30s infinite; animation-delay: 6s; }
+.team .slide:nth-child(3) { animation: fadeTeam 30s infinite; animation-delay: 12s; }
+.team .slide:nth-child(4) { animation: fadeTeam 30s infinite; animation-delay: 18s; }
+.team .slide:nth-child(5) { animation: fadeTeam 30s infinite; animation-delay: 24s; }
+
+@keyframes fadeTeam {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  20% { opacity: 1; }
+  30% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@keyframes enableScroll {
+    0% { 
+        overflow-y: hidden; 
+    }
+    70% { 
+        overflow-y: hidden; 
+    }
+    100% { 
+        overflow-y: auto; 
+    }
+}
+@keyframes hide-preloader {
+    0%   { opacity: 1; 
+        visibility: visible; 
+    }
+    85%  { opacity: 1; }
+    100% { opacity: 0; 
+        visibility: hidden; 
+    }
+}
+.loader .dot:nth-child(2) { animation-delay: 0.2s; }
+.loader .dot:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes dots {
+    from { transform: translateY(0); }
+    to   { transform: translateY(-12px); }
+}
