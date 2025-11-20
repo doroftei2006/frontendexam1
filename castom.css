@@ -7,7 +7,7 @@ html, body {
     animation: enableScroll 4s forwards;
     cursor: url('img/cursor/cursor_32.png') 10 10, auto;
 }
-button, .btn, a, svg {
+button, .btn, a, svg, .arow {
     cursor: url('img/cursor/cursoractive_32.png') 15 15, pointer;
 }
 @font-face {
